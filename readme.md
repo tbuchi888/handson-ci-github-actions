@@ -25,3 +25,4 @@ docker push takuyak/nginx-sample-bl:v1
 kubectl -f /k8s/bl.yml
 kubectl get all
 ```
+
