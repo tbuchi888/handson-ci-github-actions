@@ -63,7 +63,7 @@ jobs:
         id: set_tag
         run: |
           IMAGE_VERSION=`cat image/version`
-          echo "::set-output name=IMAGE_VERSION::$IMAGE_VERSION"
+          echo "IMAGE_VERSION=$IMAGE_VERSION" >> $GITHUB_OUTPUT
       - 
         name: (Option) Check a global variable
         run: |   
